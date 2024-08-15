@@ -197,4 +197,8 @@ MONGO_PS = os.environ.get("MONGODB_PASSWORD")
 MONGO_CLIENT = pymongo.MongoClient(f"mongodb://{MONGO_UN}:{MONGO_PS}@mongodb:27017/")
 DJANGO_DOCKER = MONGO_CLIENT["django_docker"]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-CSRF_TRUSTED_ORIGINS = ["https://www.pitbhar.ovh/"]
+CSRF_TRUSTED_ORIGINS = [
+    'https://www.pitbhar.ovh',
+    'https://pitbhar.ovh'
+]
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
