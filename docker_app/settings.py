@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-gu+4-ik1&q*__ibusz64-$_=haa3*x!!5tbv=613+pil-^n*+o
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pitbhar.ovh', 'www.pitbhar.ovh', 'localhost']
+ALLOWED_HOSTS = ['pitbhar.ovh', 'www.pitbhar.ovh', 'localhost', 'https://www.pitbhar.ovh', 'https://pitbhar.ovh']
 
 
 # Application definition
